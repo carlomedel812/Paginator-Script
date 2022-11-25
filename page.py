@@ -10,3 +10,6 @@ class Page:
 
     def has_previous(self) -> bool:
         return self.page_number > 1
+
+    def info(self) -> str:
+        return "Page " + str(self.page_number) + " of " + str(self.total_pages)

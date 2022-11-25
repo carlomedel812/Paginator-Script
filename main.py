@@ -25,12 +25,14 @@ print("number of pages:" + str(paginator.number_pages))
 
 page1 = paginator.page(1)
 
+print(page1.info())
 print("page 1 objet list: " + str(page1.object_list))
 print("page 1 has next page: " + str(page1.has_next()))
 print("page 1 has previous: " + str(page1.has_previous()))
 
 page2 = paginator.page(2)
 
+print(page2.info())
 print("page 2 objet list: " + str(page2.object_list))
 print("page 2 has next page: " + str(page2.has_next()))
 print("page 2 has previous: " + str(page2.has_previous()))
